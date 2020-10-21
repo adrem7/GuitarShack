@@ -8,5 +8,8 @@ class Product(
     val model: String,
     val description: String,
     val rackSpace: Int,
-    val minOrder: Int
+    val minOrder: Int,
+    val leadTime: Int
 )
+
+

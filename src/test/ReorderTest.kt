@@ -33,7 +33,8 @@ class ReorderTest {
             "Les Paul Classic",
             "Epiphone Les Paul Classic In Worn Heritage Cherry Sunburst",
             30,
-            20
+            20,
+            1
         )
         val reorder = Reorder(alertMessenger, ReorderLevelStub(14))
 
@@ -89,8 +90,9 @@ class ReorderTest {
         val model = ""
         val make = ""
         val range = ""
+        val leadTime = 1
 
-        return Product(productId, stockLevel, make, range, model, description, rackSpace, minOrder)
+        return Product(productId, stockLevel, make, range, model, description, rackSpace, minOrder, leadTime)
     }
 
     data class ReorderLevelStub(val reorderLevel: Int) : ReorderLevel {
