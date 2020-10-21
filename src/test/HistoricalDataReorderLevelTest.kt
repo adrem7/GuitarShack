@@ -9,7 +9,7 @@ import org.junit.Test
 import java.util.*
 import kotlin.test.assertEquals
 
-class ReorderLevelTest {
+class HistoricalDataReorderLevelTest {
 
     private val salesData = mockk<SalesData>()
     private val product = Product(
