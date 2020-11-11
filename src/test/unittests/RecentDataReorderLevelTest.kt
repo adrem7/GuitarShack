@@ -1,4 +1,4 @@
-package test
+package test.unittests
 
 import io.mockk.every
 import io.mockk.mockk
@@ -37,7 +37,6 @@ class RecentDataReorderLevelTest {
         every { salesData.salesTotal(any(), any(), any()) } returnsMany listOf(0, 25)
     }
 
-    @Ignore
     @Test
     fun `reorderLevel calculated from recent start date`() {
         val startDate = Date(2020, 9, 1)
@@ -47,6 +46,18 @@ class RecentDataReorderLevelTest {
         verifySequence {
             salesData.salesTotal(any(), any(), any())
             salesData.salesTotal(811, startDate, any())
+        }
+    }
+
+    @Test
+    fun `reorderLevel calculated up to recent end date`() {
+        val endDate = Date(2020, 9, 14)
+
+        reorderLevel.get(product)
+
+        verifySequence {
+            salesData.salesTotal(any(), any(), any())
+            salesData.salesTotal(811, any(), endDate)
         }
     }
 

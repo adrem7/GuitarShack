@@ -9,9 +9,14 @@ class LeadTimeReorderLevel(
 ) : ReorderLevel {
 
     override fun get(product: Product): Int {
-        val startDate = calculateDate(currentDate.get(), Calendar.YEAR, -1)
+        var total = 0
+        var startDate = calculateDate(currentDate.get(), Calendar.YEAR, -1)
         val endDate = calculateDate(startDate, Calendar.DATE, product.leadTime - 1)
-
-        return salesData.salesTotal(product.productId, startDate, endDate)
+        total = salesData.salesTotal(product.productId, startDate, endDate)
+        if (total == 0 ) {
+            startDate = calculateDate(currentDate.get(), Calendar.DATE, -(product.leadTime - 1))
+            total = salesData.salesTotal(product.productId, startDate, currentDate.get())
+        }
+        return total
     }
 }
