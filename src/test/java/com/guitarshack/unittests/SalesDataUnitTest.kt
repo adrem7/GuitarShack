@@ -13,7 +13,7 @@ class SalesDataUnitTest : SalesDataTestBase() {
 }
 
 class NetworkStub : Network {
-    override fun executeCall(call: Call<Sales>): Int {
-        return 31
+    override fun <T> executeCall(call: Call<T>): T {
+        return Sales(31) as T
     }
 }

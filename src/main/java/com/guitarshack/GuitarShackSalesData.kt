@@ -23,6 +23,6 @@ class GuitarShackSalesData(
 
         val service = retrofit.create(SalesDataService::class.java)
         val call = service.getSalesTotal(productId, formattedStartDate, formattedEndDate, "total")
-        return network.executeCall(call)
+        return network.executeCall<Sales>(call).total
     }
 }
