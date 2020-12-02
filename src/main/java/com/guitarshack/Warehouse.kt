@@ -1,4 +1,6 @@
-package main
+package com.guitarshack
+
+import main.Product
 
 interface Warehouse {
 

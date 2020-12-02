@@ -2,10 +2,10 @@ package com.guitarshack.unittests
 
 import io.mockk.mockk
 import io.mockk.verify
-import main.AlertTrigger
+import com.guitarshack.AlertTrigger
 import main.Product
 import main.Reorder
-import main.Warehouse
+import com.guitarshack.Warehouse
 import org.junit.Test
 
 class AlertTriggerTest {

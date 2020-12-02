@@ -1,4 +1,6 @@
-package main 
+package com.guitarshack
+
+import main.Reorder
 
 class AlertTrigger(
     val warehouse: Warehouse,
