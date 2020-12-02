@@ -15,7 +15,7 @@ class GuitarShackSalesData(
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        val datePattern = "MM/dd/YYYY"
+        val datePattern = "M/d/YYYY"
         val simpleDateFormat = SimpleDateFormat(datePattern)
 
         val formattedStartDate = simpleDateFormat.format(startDate)
