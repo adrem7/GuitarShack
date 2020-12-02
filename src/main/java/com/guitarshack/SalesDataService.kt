@@ -7,7 +7,7 @@ import retrofit2.http.Query
 interface SalesDataService {
     @GET("sales?")
     fun getSalesTotal(
-        @Query("productId") productId: Int,
+        @Query("id") productId: Int,
         @Query("startDate") startDate: String,
         @Query("endDate") endDate: String,
         @Query("action") action: String

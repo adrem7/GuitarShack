@@ -12,10 +12,10 @@ class LeadTimeReorderLevel(
         var total = 0
         var startDate = calculateDate(currentDate.get(), Calendar.YEAR, -1)
         val endDate = calculateDate(startDate, Calendar.DATE, product.leadTime - 1)
-        total = salesData.salesTotal(product.productId, startDate, endDate)
+        total = salesData.salesTotal(product.id, startDate, endDate)
         if (total == 0 ) {
             startDate = calculateDate(currentDate.get(), Calendar.DATE, -(product.leadTime - 1))
-            total = salesData.salesTotal(product.productId, startDate, currentDate.get())
+            total = salesData.salesTotal(product.id, startDate, currentDate.get())
         }
         return total
     }
