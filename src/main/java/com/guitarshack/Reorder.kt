@@ -1,4 +1,4 @@
-package main
+package com.guitarshack
 
 class Reorder(private val alertMessenger: AlertMessenger, private val reorderLevel: ReorderLevel) {
 

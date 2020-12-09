@@ -1,4 +1,4 @@
-package main
+package com.guitarshack
 
 import java.util.*
 

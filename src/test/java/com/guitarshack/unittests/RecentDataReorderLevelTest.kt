@@ -1,9 +1,9 @@
 package com.guitarshack.unittests
 
+import com.guitarshack.*
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verifySequence
-import main.*
 import org.junit.Before
 import org.junit.Test
 import java.util.*

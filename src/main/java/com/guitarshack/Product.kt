@@ -1,4 +1,4 @@
-package main
+package com.guitarshack
 
 class Product(
     val id: Int,

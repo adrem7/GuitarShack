@@ -1,6 +1,6 @@
 package com.guitarshack.unittests
 
-import main.GuitarShackSalesData
+import com.guitarshack.GuitarShackSalesData
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import java.util.*

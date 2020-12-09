@@ -1,9 +1,7 @@
 package com.guitarshack.integrationtests
 
-import com.guitarshack.AlertTrigger
-import com.guitarshack.ProductWarehouse
+import com.guitarshack.*
 import io.mockk.*
-import main.*
 import org.junit.Test
 import java.util.*
 

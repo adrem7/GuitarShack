@@ -3,8 +3,8 @@ package com.guitarshack.unittests
 import io.mockk.mockk
 import io.mockk.verify
 import com.guitarshack.AlertTrigger
-import main.Product
-import main.Reorder
+import com.guitarshack.Product
+import com.guitarshack.Reorder
 import com.guitarshack.Warehouse
 import org.junit.Test
 

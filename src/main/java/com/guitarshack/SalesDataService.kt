@@ -1,4 +1,4 @@
-package main
+package com.guitarshack
 
 import retrofit2.Call
 import retrofit2.http.GET

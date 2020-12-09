@@ -1,7 +1,5 @@
 package com.guitarshack
 
-import main.Network
-import main.Product
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

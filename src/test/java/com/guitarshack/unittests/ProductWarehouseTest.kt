@@ -1,7 +1,7 @@
 package com.guitarshack.unittests
 
-import main.Network
-import main.Product
+import com.guitarshack.Network
+import com.guitarshack.Product
 import com.guitarshack.ProductWarehouse
 import retrofit2.Call
 

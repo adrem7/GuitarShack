@@ -1,10 +1,10 @@
 package com.guitarshack.unittests
 
 import io.mockk.*
-import main.AlertMessenger
-import main.Product
-import main.Reorder
-import main.ReorderLevel
+import com.guitarshack.AlertMessenger
+import com.guitarshack.Product
+import com.guitarshack.Reorder
+import com.guitarshack.ReorderLevel
 import org.junit.Test
 
 class ReorderTest {

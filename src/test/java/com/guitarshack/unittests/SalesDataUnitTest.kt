@@ -1,8 +1,8 @@
 package com.guitarshack.unittests
 
-import main.GuitarShackSalesData
-import main.Network
-import main.Sales
+import com.guitarshack.GuitarShackSalesData
+import com.guitarshack.Network
+import com.guitarshack.Sales
 import retrofit2.Call
 
 class SalesDataUnitTest : SalesDataTestBase() {

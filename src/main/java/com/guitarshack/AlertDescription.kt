@@ -1,4 +1,4 @@
-package main
+package com.guitarshack
 
 class AlertDescription(private val product: Product) {
     fun build(): String {
